@@ -1,6 +1,6 @@
 <?php
 echo "true";
-include('/includes/config.php');
+include('includes/config.php');
 $sql = "select * from users where user_srno = 1";
 $stmt = $db->query($sql);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
